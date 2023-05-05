@@ -42,3 +42,13 @@ On Linux and macOS: $HOME/.config/QtProject/qtcreator/templates/wizards
 
 - $HOME/.config/QtProject/qtcreator/templates/wizards/pt-project
 - $HOME/.config/QtProject/qtcreator/templates/wizards/pt-uiproject
+
+
+## TOOD
+- Add new samples.
+- Add new features.
+- Add new package and third-parties.
+- Tell me your opinion about which other items should be added.
+
+## Contribution
+- Bug fixes, docs, and enhancements welcome! Please let me know kambiz.ceo@gmail.com

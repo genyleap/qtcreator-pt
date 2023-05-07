@@ -13,7 +13,7 @@ if (USE_FULL_QT_FEATURES)
   add_definitions(-USE_FULL_QT_FEATURES)
 endif()
 
-option(GUI_APPLICATION    "Include User Interface"  FALSE)
+option(GUI_APPLICATION    "Include User Interface"  TRUE)
 if (GUI_APPLICATION)
   add_definitions(-DGUI_APPLICATION)
 endif()

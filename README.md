@@ -20,28 +20,28 @@ A template for integration with the  PT &amp; Qt Creator development environment
 Qt Creator searches the following locations for wizards:
 
 ## Shared directory:
-- On Windows: share\qtcreator\templates\wizards
-- On Linux: share/qtcreator/templates/wizards
-- On macOS: Qt Creator.app/Contents/Resources/templates/wizards
+- On Windows: share\qtcreator\templates\wizards\projects
+- On Linux: share/qtcreator/templates/wizards/projects
+- On macOS: Qt Creator.app/Contents/Resources/templates/wizards/projects
 
-- On Windows: share\qtcreator\templates\wizards\pt-project
-- On Windows: share\qtcreator\templates\wizards\pt-uiproject
+- On Windows: share\qtcreator\templates\wizards\projects\pt-project
+- On Windows: share\qtcreator\templates\wizards\projects\pt-uiproject
 
-- On Linux: share/qtcreator/templates/wizards/pt-project
-- On Linux: share/qtcreator/templates/wizards/pt-uiproject
+- On Linux: share/qtcreator/templates/wizards/projects/pt-project
+- On Linux: share/qtcreator/templates/wizardsprojects//pt-uiproject
 
-- On macOS: Qt Creator.app/Contents/Resources/templates/wizards/pt-project
-- On macOS: Qt Creator.app/Contents/Resources/templates/wizards/pt-uiproject
+- On macOS: Qt Creator.app/Contents/Resources/templates/wizards/projects/pt-project
+- On macOS: Qt Creator.app/Contents/Resources/templates/wizards/projects/pt-uiproject
 
 ## Local user's settings directory:
-On Windows: %APPDATA%\QtProject\qtcreator\templates\wizards\
-On Linux and macOS: $HOME/.config/QtProject/qtcreator/templates/wizards
+On Windows: %APPDATA%\QtProject\qtcreator\templates\wizards\projects\
+On Linux and macOS: $HOME/.config/QtProject/qtcreator/templates/wizards/projects
 
-- %APPDATA%\QtProject\qtcreator\templates\wizards\pt-project
-- %APPDATA%\QtProject\qtcreator\templates\wizards\pt-uiproject
+- %APPDATA%\QtProject\qtcreator\templates\wizards\projects\pt-project
+- %APPDATA%\QtProject\qtcreator\templates\wizards\projects\pt-uiproject
 
-- $HOME/.config/QtProject/qtcreator/templates/wizards/pt-project
-- $HOME/.config/QtProject/qtcreator/templates/wizards/pt-uiproject
+- $HOME/.config/QtProject/qtcreator/templates/wizards/projects/pt-project
+- $HOME/.config/QtProject/qtcreator/templates/wizards/projects/pt-uiproject
 
 
 ## TOOD

@@ -28,7 +28,7 @@ Qt Creator searches the following locations for wizards:
 - On Windows: share\qtcreator\templates\wizards\projects\pt-uiproject
 
 - On Linux: share/qtcreator/templates/wizards/projects/pt-project
-- On Linux: share/qtcreator/templates/wizardsprojects//pt-uiproject
+- On Linux: share/qtcreator/templates/wizardsprojects/pt-uiproject
 
 - On macOS: Qt Creator.app/Contents/Resources/templates/wizards/projects/pt-project
 - On macOS: Qt Creator.app/Contents/Resources/templates/wizards/projects/pt-uiproject

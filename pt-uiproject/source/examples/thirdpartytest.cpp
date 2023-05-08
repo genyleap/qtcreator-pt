@@ -29,13 +29,13 @@ void ThirdPartyTest::testFmt()
 #if defined(USE_FMT)
     using namespace fmt::literals;
     std::cout << "========FMT TEST========" << std::endl;
-    fmt::print("This is a great template for C++{}.\n", 20);
-    fmt::print("I'd rather be {1} than {0}.\n", "right", "happy");
-    fmt::print("Hello, {name}! The answer is {number}. Goodbye, {name}.\n", fmt::arg("name", "World"), fmt::arg("number", 42));
+    fmt::print("This is a great template for C++{}.", 20);
+    fmt::print("I'd rather be {1} than {0}.", "right", "happy");
+    fmt::print("Hello, {name}! The answer is {number}. Goodbye, {name}.", fmt::arg("name", "World"), fmt::arg("number", 42));
 
     //!9.1.0
     auto v = std::vector{1, 2, 3};
-    fmt::print("{:n}\n", v); // prints 1, 2, 3
+    fmt::print("{:n}", v); // prints 1, 2, 3
 
     std::cout << "========FMT TEST========" << std::endl;
 #else
@@ -69,11 +69,11 @@ void ThirdPartyTest::testCtre()
     /////
     auto input = "123,456,768"sv;
     for (auto match : ctre::range<"([0-9]+),?">(input)) {
-        std::cout << std::string_view{match.get<0>()} << "\n";
+        std::cout << std::string_view{match.get<0>()} << "";
     }
 
     std::cout << "Check the more test example from : "
-                 "https://github.com/hanickadot/compile-time-regular-expressions/tree/main/tests \n";
+                 "https://github.com/hanickadot/compile-time-regular-expressions/tree/main/tests ";
 
     std::cout << "========CTRE TEST========" << std::endl;
 #else

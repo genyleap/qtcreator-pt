@@ -88,12 +88,12 @@ void LibraryTest::testBoost() const noexcept
 {
 std::cout << "========BOOST TEST========" << std::endl;
   std::cout << "Boost version: " << BOOST_VERSION << std::endl;
-  std::cout << "Boost Lib Clock Test\n";
+  std::cout << "Boost Lib Clock Test" << std::endl;
   boost::chrono::system_clock::time_point start = boost::chrono::system_clock::now();
   for ( long i = 0; i < 10000000; ++i )
     std::sqrt( 123.456L ); // burn some time
   boost::chrono::duration<double> sec = boost::chrono::system_clock::now() - start;
-  std::cout << "took " << sec.count() << " seconds\n";
+  std::cout << "took " << sec.count() << " seconds" << std::endl;
 }
 #endif
 

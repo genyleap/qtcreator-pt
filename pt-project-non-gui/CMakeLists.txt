@@ -356,8 +356,15 @@ if(GUI_APPLICATION AND PROJECT_MAIN_TYPE STREQUAL "qt" OR PROJECT_MAIN_TYPE STRE
         endif()
     endif()
 
-    target_link_libraries(${PROJECT_NAME} PRIVATE ${LIB_MODULES} ${QT_MODULES_LINK} ${OS_LIBS})
+    # C++ STL Library Features Libs.
+      find_package(${LIB_STL_MODULES} REQUIRED COMPONENTS ${LIB_STL_MODULES_LINKER})
 
+      target_link_libraries(${PROJECT_NAME} PRIVATE
+              ${LIB_STL_MODULES_LINKER}
+              ${LIB_MODULES}
+              ${QT_MODULES_LINK}
+              ${OS_LIBS}
+          )
     #Extra Modules
     target_include_directories(${PROJECT_NAME} PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/source PRIVATE source ${LIB_TARGET_INCLUDE_DIRECTORIES})
     target_link_directories(${PROJECT_NAME} PRIVATE ${CMAKE_CURRENT_SOURCE_DIR}/source ${LIB_TARGET_LINK_DIRECTORIES})
@@ -405,8 +412,15 @@ else()
         endif()
     endif()
 
+    # C++ STL Library Features Libs.
+    find_package(${LIB_STL_MODULES} REQUIRED COMPONENTS ${LIB_STL_MODULES_LINKER})
+
     #Extra Modules
-    target_link_libraries(${PROJECT_NAME} PRIVATE ${LIB_MODULES} ${OS_LIBS})
+    target_link_libraries(${PROJECT_NAME} PRIVATE
+            ${LIB_STL_MODULES_LINKER}
+            ${LIB_MODULES}
+            ${OS_LIBS}
+        )
     target_include_directories(${PROJECT_NAME}
         PUBLIC
         ${CMAKE_CURRENT_SOURCE_DIR}/source PRIVATE source
